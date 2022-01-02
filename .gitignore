@@ -94,3 +94,6 @@ Retro Shooter/Library/SourceAssetDB
 *.log
 Retro Shooter/Logs/AssetImportWorker0-prev.log
 Retro Shooter/Logs/shadercompiler-UnityShaderCompiler.exe0.log
+*.dwlt
+*.asset
+Retro Shooter/Library/SourceAssetDB
