@@ -70,3 +70,11 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+Retro Shooter/Library/ArtifactDB
+Retro Shooter/Library/ArtifactDB
+Retro Shooter/Library/Artifacts/2e/2ea53b6808ba5d5fba564055d6efb2be
+*.dwlt
+Retro Shooter/Library/SceneVisibilityState.asset
+Retro Shooter/Library/ShaderCache/EditorEncounteredVariants
+Retro Shooter/Library/SourceAssetDB
+Retro Shooter/Logs/AssetImportWorker0-prev.log
