@@ -3,12 +3,12 @@
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
 /'Retro Shooter'/[Ll]ibrary/
-/[Tt]emp/
-/[Oo]bj/
-/[Bb]uild/
-/[Bb]uilds/
-/[Ll]ogs/
-/[Uu]ser[Ss]ettings/
+/'Retro Shooter'/[Tt]emp/
+/'Retro Shooter'/[Oo]bj/
+/'Retro Shooter'/[Bb]uild/
+/'Retro Shooter'/[Bb]uilds/
+/'Retro Shooter'/[Ll]ogs/
+/'Retro Shooter'/[Uu]ser[Ss]ettings/
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
