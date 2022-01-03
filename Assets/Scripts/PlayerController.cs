@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     private GameObject self;
     private GameObject Body;
     public float speed = 0.5f;
-    public fload maximumSpeed = 10.0f;
+    public float maximumSpeed = 10.0f;
     // Start is called before the first frame update
     void Start()
     {
