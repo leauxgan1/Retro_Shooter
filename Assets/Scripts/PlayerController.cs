@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     private GameObject self;
     private GameObject Body;
+    private Rigidbody BodyPhysics;
     public float speed = 0.5f;
     public float maximumSpeed = 10.0f;
     // Start is called before the first frame update
@@ -13,18 +14,18 @@ public class PlayerController : MonoBehaviour
     {
         self = gameObject;
         Body = self.transform.GetChild(0).gameObject;
+        BodyPhysics = Body.GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
         /**/
-        Rigidbody rigidBody = Body.GetComponent<Rigidbody>();
         
         float xMagnitude = Input.GetAxis("Horizontal") * Time.deltaTime * speed;
         float zMagnitude = Input.GetAxis("Vertical") * Time.deltaTime * speed;
-        rigidBody.AddRelativeForce(xMagnitude, 0.0f, zMagnitude, ForceMode.Impulse);
-        
+        BodyPhysics.AddRelativeForce(xMagnitude, 0.0f, zMagnitude, ForceMode.Impulse);
+        constrainSpeed();
         /*
         if(Input.GetKey(KeyCode.W)) {
              transform.position += Body.transform.forward * Time.deltaTime * speed;
@@ -42,6 +43,9 @@ public class PlayerController : MonoBehaviour
     }
 
     void constrainSpeed() {
-
+        if(BodyPhysics.velocity.magnitude > maximumSpeed) {
+            Vector3 newVel = Vector3.ClampMagnitude(BodyPhysics.velocity, maximumSpeed);
+            BodyPhysics.velocity = newVel;
+        }
     }
 }
